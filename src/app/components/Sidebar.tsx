@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { IoBrowsersOutline, IoCalculator, IoLogoReact } from 'react-icons/io5';
+import { IoBrowsersOutline, IoCalculator, IoFootball, IoLogoReact } from 'react-icons/io5';
 import { SidebarMenuItem } from './SidebarMenuItem';
 
 
@@ -16,6 +16,12 @@ const menuItems = [
     title: 'Counter',
     subTitle: 'Contador Client Side'
   },
+  {
+    path: '/dashboard/pokemons',
+    icon: <IoFootball size={40} />,
+    title: 'pokemons',
+    subTitle: 'Generacion estatica'
+  },
 ]
 
 
@@ -24,7 +30,7 @@ export const Sidebar = () => {
 
     <div id="menu" 
       style={{ width: '400px' }}
-      className="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 left-0 h-screen overflow-y-scroll">
+      className="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 left-0  overflow-y-scroll">
 
 
       <div id="logo" className="my-4 px-6">
@@ -42,14 +48,14 @@ export const Sidebar = () => {
         <a href="#" className="inline-flex space-x-2 items-center">
           <span>
             <Image className="rounded-full w-8 h-8" 
-              src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c" 
+              src="https://media.licdn.com/dms/image/v2/C4D03AQEWWvc9i4npaA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1651361117837?e=2147483647&v=beta&t=GAxDo_6L7WA8cPsAarBOKCBhJUOzNosC9YPYFK_Et4g" 
               alt="User avatar" 
               width={50}
               height={50}
             />
           </span>
           <span className="text-sm md:text-base font-bold">
-            Fernando Herrera
+            Fabian Pappa
           </span>
         </a>
       </div>
